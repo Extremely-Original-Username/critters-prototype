@@ -77,8 +77,6 @@ namespace Critters
 
             world.Update();
 
-            Console.WriteLine("Critters: " + world.getAgents().Length);
-
             UpdateTitle(); 
             base.Update(gameTime);
         }
