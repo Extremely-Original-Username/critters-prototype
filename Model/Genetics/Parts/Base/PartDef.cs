@@ -103,7 +103,7 @@ namespace Model.Genetics.Parts.Base
                 "Rotates the critter",
                 1.2f,
                 (p, c) => { return; },
-                (p, c) => { return;  if (c.r.Next(100) > 90) c.FacingAngle = Vector2<float>.fromAngle(Vector2<float>.toAngle(c.FacingAngle) + c.r.Next(3) - 1); }
+                (p, c) => { if (c.r.Next(100) > 97) c.FacingAngle = Vector2<float>.fromAngle(Vector2<float>.toAngle(c.FacingAngle) + c.r.Next(3) - 1); }
                 )},
             { 'F', new PartDef(
                 'F',
