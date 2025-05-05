@@ -44,6 +44,9 @@ namespace Model.Genetics.Parts.Base
         public const char EmptyGeneChar = '0';
         public static readonly Dictionary<char, PartDef> PartList = new Dictionary<char, PartDef>
         {
+            {
+                '0', null
+            },
             { 'B', new PartDef(
                 'B',
                 "Body",
