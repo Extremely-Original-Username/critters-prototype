@@ -112,7 +112,7 @@ namespace Model.Genetics
                 try
                 {
                     removeGene(target);
-                } catch (Exception ex) { }
+                } catch (Exception) { }
                 return;
             }
         }

@@ -19,7 +19,7 @@ namespace Model.Genetics.Parts.Base
         public string Name { get; }
         public string Description { get; }
         public float MetabolicLoad { get; }
-        public Vector2<int> Size { get; }
+        public int Size { get; }
         public Action<Part, Critter> PresentEffect { get; }
         public Action<Part, Critter> UpdateEffect { get; }
 
@@ -31,23 +31,19 @@ namespace Model.Genetics.Parts.Base
             MetabolicLoad = metabolicLoad;
             PresentEffect = presentEffect;
             UpdateEffect = updateEffect;
+
+            this.Size = 1; //TODO: Implement size
         }
 
         public static char GetRandomGene()
         {
             var result = PartList.Keys.Where(x => x != EmptyGeneChar).ToList()[new Random().Next(PartList.Count - 1)];
-            if (result == '0')
-            {
-                var test = true;
-            }
             return result;
         }
 
         public const char EmptyGeneChar = '0';
         public static readonly Dictionary<char, PartDef> PartList = new Dictionary<char, PartDef>
         {
-            { '0', null },
-
             { 'B', new PartDef(
                 'B',
                 "Body",
