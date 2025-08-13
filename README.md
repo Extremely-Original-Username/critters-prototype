@@ -5,4 +5,4 @@ The simulation is currently feature-sparse, just consisting of agents made up of
 
 ![Critters](https://github.com/user-attachments/assets/dfa5992b-65f4-42ac-a936-16582376b251)
 
-The simulation is currently quite poorly optimised, so performance can be poor at high carbon levels when more critters can survive.
+The simulation is currently quite poorly optimised, so performance can be poor at high carbon levels when more critters can survive. I am currently working on a more advanced version in Godot, making more efficient use of compute shaders after my experience developing [a simple sand simulation in C++](https://github.com/Extremely-Original-Username/simple-sand-game)
